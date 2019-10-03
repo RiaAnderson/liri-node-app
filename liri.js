@@ -34,8 +34,8 @@ var getSpotify = function (songName) {
 }
 
 // OMDB
-function getMovie(yourSearch) {
-    axios.get(`http://www.omdbapi.com/?apikey=${process.env.OMDB_API}&t=${yourSearch}`)
+function getMovie(searchData) {
+    axios.get(`http://www.omdbapi.com/?apikey=${process.env.OMDB_API}&t=${searchData}`)
         .then(function (movie) {
             console.log(movie.data.Title);
             console.log(movie.data.Year);
@@ -54,8 +54,8 @@ function getMovie(yourSearch) {
 
 
 // Concerts - Bands in Town
-function getConcert(yourSearch) {
-    axios.get(`https://rest.bandsintown.com/artists/${yourSearch}/events?app_id=codingbootcamp`)
+function getConcert(searchData) {
+    axios.get(`https://rest.bandsintown.com/artists/${searchData}/events?app_id=codingbootcamp`)
         .then(function (response) {
             for (let i = 0; i < response.data.length; i++) {
                 console.log(response.data[i].venue.name);
@@ -84,16 +84,16 @@ var doWhat = function () {
 
 
 // Commands 
-var command = function (caseData, yourSearch) {
+var command = function (caseData, searchData) {
     switch (caseData) {
         case "spotify-this-song":
-            getSpotify(yourSearch);
+            getSpotify(searchData);
             break;
         case "movie-this":
-            getMovie(yourSearch);
+            getMovie(searchData);
             break;
         case "concert-this":
-            getConcert(yourSearch)
+            getConcert(searchData)
             break;
         case "do-what-it-says":
             doWhat();
