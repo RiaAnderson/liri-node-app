@@ -11,6 +11,8 @@ LIRI is a _Language_ Interpretation and Recognition Interface. It is a command l
 Node-Spotify-API is used to run the command "spotify-this-song" to pull up a list of songs that have the song name you enter. See demonstration video.
  
 * Example: $ node liri.js spotify-this-song maps
+
+![Image description](screenshots/concert.jpg)
  
 ##  Movie This
  
