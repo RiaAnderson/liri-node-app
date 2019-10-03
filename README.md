@@ -8,29 +8,35 @@ LIRI is a _Language_ Interpretation and Recognition Interface. It is a command l
  
 ## Spotify This Song
  
-Node-Spotify-API is used to run the command "spotify-this-song" to pull up a list of songs that have the song name you enter. See demonstration video.
+Node-Spotify-API is used to run the command "spotify-this-song" to pull up a list of songs that have the song name you enter. See image.
  
 * Example: $ node liri.js spotify-this-song maps
 
-![Image description](screenshots/concert.jpg)
+![Spotify This Song](screenshots/spotify.jpg)
  
 ##  Movie This
  
-The OMDB API is used to run the command "movie-this" to pull up movie information for the movie title you search for. See demonstration video.
+The OMDB API is used to run the command "movie-this" to pull up movie information for the movie title you search for. See image.
  
 * Example: $ node liri.js movie-this titanic
+
+![Movie This](screenshots/movie.jpg)
  
 ## Concert This
  
-The Bands In Town API is used to run the command "concert-this" to pull up information on an artist or bands next concert. See demonstration video.
+The Bands In Town API is used to run the command "concert-this" to pull up information on an artist or bands next concert. See image.
  
 * Example: $ node liri.js concert-this logic
+
+![Concert This](screenshots/concert.jpg)
  
 ## Do What It Says
  
-The fs.readFile method is used to read data from the "random.txt" file. The information in the "random.text" file is then used in a search. See demonstration video.
+The fs.readFile method is used to read data from the "random.txt" file. The information in the "random.text" file is then used in a search. See image.
  
 * Example: $ node liri.js do-what-it-says
+
+![Do What It Says](screenshots/dowhat.jpg)
  
 ## Dependencies
  
